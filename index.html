@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Financiamento</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Financiamento</h1>
+        <form id="financing-form">
+            <label for="amount">Valor Financiado (R$):</label>
+            <input type="number" id="amount" required>
+
+            <label for="interest">Taxa de Juros (% ao mês):</label>
+            <input type="number" id="interest" required>
+
+            <label for="installments">Número de Parcelas:</label>
+            <input type="number" id="installments" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <h2>Prestação Mensal: R$ <span id="result">0.00</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
